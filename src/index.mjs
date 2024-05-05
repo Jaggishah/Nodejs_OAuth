@@ -1,17 +1,20 @@
 import express, { request } from "express";
+import AppRouter from "./routes/index.mjs"
 
-const app = express();
-
+const app = express()
+app.use(express.json())
+// sesssion
+// cookies
+// validator
+// passport-local
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (request, response) => {
     response.send("hello, World!!")
 })
 
-// app.get('/api/users/:id',(request,response) => {
-//     const data = request.params.id
-//     response.send({"data":data})
-// })
+app.use(AppRouter)
+
 
 // app.get('/api/users',(request,response) => {
 //     const data = request.query
