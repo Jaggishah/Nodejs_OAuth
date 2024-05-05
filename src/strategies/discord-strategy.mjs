@@ -18,8 +18,8 @@ passport.deserializeUser(async (id, done) => {
 export default passport.use(
 	new Strategy(
 		{
-			clientID: "1185785809043996732",
-			clientSecret: "client secret goes here",
+			clientID: "....",
+			clientSecret: "...",
 			callbackURL: "http://localhost:3000/api/auth/discord/redirect",
 			scope: ["identify"],
 		},
