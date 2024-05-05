@@ -17,7 +17,7 @@ app.get('/', (request, response) => {
 //     const data = request.query
 //     response.send({"data":data})
 // })
-
+// put,patch,delete
 
 app.listen(PORT , () => {
     console.log( `Running on ${PORT}`)
